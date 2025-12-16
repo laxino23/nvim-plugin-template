@@ -8,6 +8,7 @@
 
 - Chore
 - Link of nvim download is old
+- Fix action test cannot find nvim
 
 ### 📚 Documentation
 
@@ -17,4 +18,5 @@
 ### ⚙️ Miscellaneous Tasks
 
 - Minor fix of commit
+- *(release)* Update changelog
 - *(release)* Update changelog
