@@ -1,10 +1,13 @@
-std = "luajit"
-ignore = { "212" }
-max_line_length = 120
+-- .luacheckrc
 globals = {
   "vim",
-  "describe",
-  "it",
-  "before_each",
-  "after_each",
+}
+
+read_globals = {
+  "vim",
+}
+
+-- Ignore line length warnings
+ignore = {
+  "631", -- max_line_length
 }
