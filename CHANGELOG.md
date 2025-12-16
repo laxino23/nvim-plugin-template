@@ -7,6 +7,7 @@
 ### 🐛 Bug Fixes
 
 - Chore
+- Link of nvim download is old
 
 ### 📚 Documentation
 
@@ -16,3 +17,4 @@
 ### ⚙️ Miscellaneous Tasks
 
 - Minor fix of commit
+- *(release)* Update changelog
