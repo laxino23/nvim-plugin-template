@@ -12,18 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Neovim
-        run: |
-          wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz
-          tar xzf nvim-linux-x86_64.tar.gz
-          echo "$PWD/nvim-linux64/bin" >> $GITHUB_PATH
+      - name: Setup Neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: stable
 
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y luarocks lua5.1 liblua5.1-dev
+          # CN: 确保安装 busted 和 nlua，nlua 是让 busted 能在 nvim 环境下运行的关键
+          # JP: busted と nlua を確実にインストールします。nlua は busted を nvim 環境で実行するために不可欠です
           sudo luarocks install busted
           sudo luarocks install nlua
 
       - name: Run tests
-        run: busted
+        run: busted --output=gtest
