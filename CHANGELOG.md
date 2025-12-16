@@ -11,6 +11,7 @@
 ### 📚 Documentation
 
 - Change the gitignore
+- README.md rearrange and fix minor bug
 
 ### ⚙️ Miscellaneous Tasks
 
