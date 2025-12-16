@@ -14,8 +14,8 @@ jobs:
 
       - name: Install Neovim
         run: |
-          wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
-          tar xzf nvim-linux64.tar.gz
+          wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz
+          tar xzf nvim-linux-x86_64.tar.gz
           echo "$PWD/nvim-linux64/bin" >> $GITHUB_PATH
 
       - name: Install dependencies
