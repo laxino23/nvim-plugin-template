@@ -1,8 +1,8 @@
-describe("my-plugin", function()
+describe("my-plugins", function()
   local plugin
 
   before_each(function()
-    plugin = require "my-plugin"
+    plugin = require "my-plugins"
   end)
 
   it("can be required", function()
