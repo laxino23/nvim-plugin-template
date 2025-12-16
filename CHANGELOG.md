@@ -7,3 +7,7 @@
 ### 🐛 Bug Fixes
 
 - Chore
+
+### ⚙️ Miscellaneous Tasks
+
+- Minor fix of commit

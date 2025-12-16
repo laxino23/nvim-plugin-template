@@ -1,10 +1,10 @@
-std = "luajit+nvim"
+std = "luajit"
 ignore = { "212" }
 max_line_length = 120
 globals = {
-	"vim",
-	"describe",
-	"it",
-	"before_each",
-	"after_each",
+  "vim",
+  "describe",
+  "it",
+  "before_each",
+  "after_each",
 }
