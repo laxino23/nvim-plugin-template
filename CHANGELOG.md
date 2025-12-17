@@ -15,10 +15,12 @@
 
 - Change the gitignore
 - README.md rearrange and fix minor bug
+- *(readme.md)* Change the README.md
 
 ### ⚙️ Miscellaneous Tasks
 
 - Minor fix of commit
+- *(release)* Update changelog
 - *(release)* Update changelog
 - *(release)* Update changelog
 - *(release)* Update changelog
