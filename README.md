@@ -169,6 +169,13 @@ Interactive tool for writing standardized commit messages.
 用于编写标准化提交消息的交互工具。
 
 - **NPM:** `npm install -g commitizen cz-conventional-changelog`
+- **IF YOU SEE THIS:** `npm error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/commitizen'`
+  1. **create a dir for npm global packages:** `mkdir ~/.npm-global`
+  2. **config npm to use thisdir**: `npm config set prefix '~/.npm-global'`
+  3. **add to your .shrc the PATH:** `echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.zshrc #zsh for example`
+  4. **reload:** `source ~/.zshrc`
+  5. **now install it without sudo:** `npm install -g commitizen
+cz-conventional-changelog`
 
 ### 2. Initialize the Project / 初始化项目
 

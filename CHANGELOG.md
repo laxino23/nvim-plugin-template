@@ -17,6 +17,7 @@
 - README.md rearrange and fix minor bug
 - *(readme.md)* Change the README.md
 - *(readme)* Readme md change the cliff truncate part
+- *(readme)* Fix readme if there is a issue with npm add cz and cz-changelong
 
 ### ⚙️ Miscellaneous Tasks
 
