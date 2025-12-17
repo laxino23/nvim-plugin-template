@@ -19,6 +19,7 @@
 - *(readme)* Readme md change the cliff truncate part
 - *(readme)* Fix readme if there is a issue with npm add cz and cz-changelong
 - *(gitignore)* Change gitignore to ignore .git/
+- Add more details in README.md
 
 ### ⚙️ Miscellaneous Tasks
 

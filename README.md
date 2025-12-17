@@ -151,6 +151,11 @@ StyLua格式化Lua代码；Luacheck检查错误和最佳实践。
 - **Luarocks (Recommended):** `luarocks install luacheck`
 - **MacOS (Homebrew):** `brew install stylua luacheck`
 
+Install luarocks (or add luacheck in luarocks):
+`luarocks install --local --only-deps my-plugins-scm-1.rockspec`
+`luarocks install --local busted`
+`luarocks install --local luacheck`
+
 #### C. Git Cliff (Required for Changelogs) / Git Cliff（变更日志必需）
 
 Generates CHANGELOG.md from commit history using Conventional Commits.
@@ -210,6 +215,37 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/) for semantic
 
 - 预览： `git cliff --unreleased`
 - 生成： `git cliff --output CHANGELOG.md`
+
+#### Running Tests / 运行测试
+
+- Run all: `busted`
+- Run specific: `busted -m 'TestName'`
+- Run with coverage: `busted --coverage`
+- Watch mode: `busted --watch`
+
+#### Linting /
+
+- Lint all Lua files: `luacheck lua/ spec/`
+- Auto-fix with stylua: `stylua lua/ spec/`
+- Check formatting only stylua: `stylua --check lua/ spec/`
+
+#### Documentation / 文档
+
+- Install: cargo install lemmy-help: `lemmy-help lua/my-plugins/init.lua > doc/my-plugins.txt`
+
+#### Release / 发布
+
+```bash
+# Generate changelog
+git cliff --tag v1.0.0 > CHANGELOG.md
+
+# Commit with commitizen
+npx cz
+
+# Tag release
+git tag v1.0.0
+git push --tags
+```
 
 ### 4. File Structure / 文件结构
 
