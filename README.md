@@ -158,7 +158,7 @@ Generates CHANGELOG.md from commit history using Conventional Commits.
 
 - **Cargo (Recommended):** `cargo install git-cliff`
 - **MacOS (Homebrew):** `brew install git-cliff`
-- After add the git cliff:
+- **After add the git cliff:**
   `cd /path/to/your/clone/`
   `rm CHANGELOG.md`
   `git cliff --output CHANGELOG.md`
