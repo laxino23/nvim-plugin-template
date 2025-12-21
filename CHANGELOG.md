@@ -3,6 +3,7 @@
 ### 🚀 Features
 
 - Chore
+- Add new plugins init sentences
 
 ### 🐛 Bug Fixes
 
